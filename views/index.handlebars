@@ -1,0 +1,19 @@
+<h1>Eat-Da-Burger!</h1>
+
+<ul>
+    {{#each burger}}
+     {{#if devourIt}}
+        {{> burger/burger-block devourIt=false}}
+     {{/if}}
+    {{/each}}    
+</ul>
+
+<h2>Enter a burger you want to eat. Click the "Submit" button</h2>
+<fom class="create-form">
+
+    <div class="form-group">
+        <label for="bu">Burger Name:</label>
+        <input type="text" id="bu" name="name">
+    </div>
+    <button type="submit">Submit</button>
+</fom>
